@@ -13,7 +13,10 @@ import { MovieService } from 'src/app/services/movie.service'
 })
 export class HeaderComponent implements OnInit {
 
-  movies: any[] = [];
+  URL = 'https://api.themoviedb.org/3/discover/movie?api_key=';
+
+  movies: any = [];
+  res : any = {}
   constructor(private movieService : MovieService) {}
 
   ngOnInit(): void {
@@ -23,9 +26,14 @@ export class HeaderComponent implements OnInit {
  
   moviesOnGet(): void{
     this.movieService.getMovies().subscribe(
-      data => console.log(data)
-      ,
-      (error : any) => console.log(error)
+      (reponse)=>{
+        console.log(reponse);
+        this.res = reponse;
+        this.movies = this.res.results;
+        
+        // this.movies = reponse['results'][1];
+        // this.movies = reponse.results;
+  },
     )
   }
   /* 
