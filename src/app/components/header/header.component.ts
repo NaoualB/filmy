@@ -12,24 +12,22 @@ import { MovieService } from 'src/app/services/movie.service'
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+
   URL = 'https://api.themoviedb.org/3/discover/movie?api_key=';
 
-  movies!: Object;
-  
-  constructor(private movieService: MovieService
-    ) {
-  }
+  movies: any[] = [];
+  constructor(private movieService : MovieService) {}
 
   ngOnInit(): void {
     this.moviesOnGet();
   }
 
-  moviesOnGet(): void {
-    this.movieService.getMovies().subscribe(data => {
-      this.movies = data[0];
-    },
-      (error: any) => console.log(error)
-    );
+ 
+  moviesOnGet(): void{
+    this.movieService.getMovies().subscribe(
+      (movies ) => console.log(movies),
+      (error : any) => console.log(error)
+    )
   }
   /* 
     getMovie(movies: any) {
