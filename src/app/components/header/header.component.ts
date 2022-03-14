@@ -24,9 +24,10 @@ export class HeaderComponent implements OnInit {
 
  
   moviesOnGet(): void{
-    this.movieService.getMovies().subscribe(data => {
-      this.movies = data['results'][0];
-    });
+    this.movieService.getMovies().subscribe(
+      (movies ) => console.log(movies),
+      (error : any) => console.log(error)
+    )
   }
   /* 
     getMovie(movies: any) {
