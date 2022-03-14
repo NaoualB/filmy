@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,6 +10,7 @@ import { ListeFilmComponent } from './components/liste-film/liste-film.component
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FavorieComponent } from './components/favorie/favorie.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FavorieComponent } from './components/favorie/favorie.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
