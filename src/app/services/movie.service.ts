@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 export class MovieService {
   constructor(private http: HttpClient) {}
 
-  getMovies(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(
+  getMovies(){
+    return this.http.get<any>(
       'https://api.themoviedb.org/3/discover/movie?api_key=af4430648fc96a64afb77bc0dea546b0'
     );
   }
