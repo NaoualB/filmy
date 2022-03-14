@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import { HttpClientModule } from '@angular/common/http';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,15 +22,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ListeFilmComponent,
     PopUpComponent,
     FooterComponent,
-    FavorieComponent
+    FavorieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
