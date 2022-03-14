@@ -11,7 +11,7 @@ export class MovieService {
 
   getMovies(): Observable<Movie[]> {
     return this.http.get<Movie[]>(
-      'https://api.themoviedb.org/3/discover/movie?api_key=af4430648fc96a64afb77bc0dea546b0'
+      'https://www.omdbapi.com/?i=tt3896198&apikey=37ace067'
     );
   }
 }

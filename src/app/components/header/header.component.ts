@@ -13,8 +13,6 @@ import { MovieService } from 'src/app/services/movie.service'
 })
 export class HeaderComponent implements OnInit {
 
-  URL = 'https://api.themoviedb.org/3/discover/movie?api_key=';
-
   movies: any[] = [];
   constructor(private movieService : MovieService) {}
 
@@ -25,7 +23,8 @@ export class HeaderComponent implements OnInit {
  
   moviesOnGet(): void{
     this.movieService.getMovies().subscribe(
-      (movies ) => console.log(movies),
+      data => console.log(data)
+      ,
       (error : any) => console.log(error)
     )
   }
