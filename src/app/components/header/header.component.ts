@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
 
   URL = 'https://api.themoviedb.org/3/discover/movie?api_key=';
 
-  movies: any[] = [];
+  movies: any = [];
+  res : any = {}
   constructor(private movieService : MovieService) {}
 
   ngOnInit(): void {
@@ -25,8 +26,14 @@ export class HeaderComponent implements OnInit {
  
   moviesOnGet(): void{
     this.movieService.getMovies().subscribe(
-      (movies ) => console.log(movies),
-      (error : any) => console.log(error)
+      (reponse)=>{
+        console.log(reponse);
+        this.res = reponse;
+        this.movies = this.res.results;
+        
+        // this.movies = reponse['results'][1];
+        // this.movies = reponse.results;
+  },
     )
   }
   /* 
