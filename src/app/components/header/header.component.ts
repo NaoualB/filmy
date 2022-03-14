@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
  
   moviesOnGet(): void{
     this.movieService.getMovies().subscribe(
-      (movies ) => console.log(movies),
+      (response ) => console.log(response),
       (error : any) => console.log(error)
     )
   }
