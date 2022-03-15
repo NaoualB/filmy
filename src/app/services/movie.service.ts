@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class MovieService {
   snapshot: any;
+  paramMap: any;
   constructor(private http: HttpClient) {}
 
   getMovies(){

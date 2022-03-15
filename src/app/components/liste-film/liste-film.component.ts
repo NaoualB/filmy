@@ -25,6 +25,8 @@ export class ListeFilmComponent implements OnInit {
       (reponse)=>{
         this.res = reponse;
         this.movies = this.res.results;
+        console.log(this.movies);
+        
         
         // this.movies = reponse['results'][1];
         // this.movies = reponse.results;
@@ -36,7 +38,7 @@ export class ListeFilmComponent implements OnInit {
 
 getTheFilm(id : any){
   return this.movies.filter(
-    (movie : any) => movie.id === id);
+    (movide : any) => movide.id === id);
 }
 
 
@@ -45,4 +47,6 @@ getTheFilm(id : any){
     console.log( this.getTheFilm(id));
     
   }
+
+
 }
