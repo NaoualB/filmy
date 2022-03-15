@@ -1,71 +1,57 @@
 /* Structuration du body*/
-.footerContainer{
+.footerContainer {
   background: #131313;
   display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
- color: #faf8f5;
- 
- 
+  justify-content: center;
+  color: #faf8f5;
+  font-family: 'Roboto', sans-serif;
 }
 .gaucheliste {
-    display: flex;
-    flex-direction: row;
- justify-content: space-between;
-margin: 5px;
-top: 50%;
-padding: 5rem;
-    }
-
-    .logo{
-    width: 40px;
-    height: 40px;
-   
-
-
-    } 
-  .droiteLogo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-   
+  display: flex;
   
-  
-     cursor: pointer; 
- padding: 1rem;
-   
-  }
+  justify-content: space-around;
+  margin: 5px;
+  top: 50%;
+  padding: 5rem;
+}
+.listes h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+}
 
- 
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.droiteLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-  .droite{
-      display: flex;
-      justify-content:center;
-     
-  
+  cursor: pointer;
+  padding: 1rem;
+}
 
-  }
+.droite {
+  display: flex;
+  justify-content: center;
+}
 
-  .btn{
-    height: 40px;
-    width: 200px;
-    padding: 0px;
-     cursor: pointer;
-     
-  
-  }
-  .droiteBtn{
+.btn {
+  height: 40px;
+  width: 200px;
+  padding: 0px;
+  cursor: pointer;
+}
+.droiteBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  border: none;
 
-     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-     align-items: center;
-     background-size: cover;
-     border: none;
-    
-      animation-duration: 3s;
+  animation-duration: 3s;
   animation-name: slidein;
 }
 
@@ -79,19 +65,9 @@ padding: 5rem;
     margin-left: 0%;
     width: 100%;
   }
-      
-   
-     
-   
-   
-  
-    
-  
-  }
-   
-  
-  
-     /* type d'ecriture du titre*/
+}
+
+/* type d'ecriture du titre*/
 h3 {
   font-family: "Lilita One", cursive;
   padding-left: 2.5rem;
@@ -99,12 +75,11 @@ h3 {
 
 /* type d'ecriture de la liste et sa taille*/
 
-.GauchePara  {
+.GauchePara {
   font-size: 18px;
-  font-family: "Lilita One", cursive;
- padding: 30px;
- text-align:justify;
-
+  font-family: 'Roboto', sans-serif;
+  padding: 100px;
+  text-align: justify;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -121,8 +96,7 @@ h3 {
   }
 }
 
-p{
-  
+p {
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -138,13 +112,11 @@ p{
     width: 100%;
   }
 }
-
 
 /* Enlever les boutons de la liste*/
 
-li{
-  list-style:none ;
-
+li {
+  list-style: none;
 }
 ul li {
   padding-bottom: 1rem;
@@ -163,5 +135,3 @@ ul li {
     width: 100%;
   }
 }
-
-

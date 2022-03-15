@@ -1,7 +1,11 @@
+<h2 class="return">Return</h2>
+
 <div class="listMovie">
   <div *ngFor="let movie of movies" class="movie">
-    <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="" />
-    <h3>{{ movie.title }}</h3>
+    
+      <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt=""
+    />
+    <a id="detail" routerLink="/movieDetail/{{movie.id}}"><h3>{{ movie.title }}</h3></a>
     <div class="overview">{{ movie.overview }}</div>
     <div class="average">
       <button (click)="addToFav(movie.id)">Ajouter aux favoirs</button>

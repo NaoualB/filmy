@@ -15,6 +15,7 @@ import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FavorieComponent } from './components/favorie/favorie.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PopUpComponent,
     FooterComponent,
     FavorieComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule,

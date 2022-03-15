@@ -17,15 +17,17 @@ export class ListeFilmComponent implements OnInit {
 
   ngOnInit(): void {
     this.moviesOnGet();
+    // this.moviesOnGetID();
   }
 
  
   moviesOnGet(): void{
     this.movieService.getMovies().subscribe(
       (reponse)=>{
-        console.log(reponse);
         this.res = reponse;
         this.movies = this.res.results;
+        console.log(this.movies);
+        
         
         // this.movies = reponse['results'][1];
         // this.movies = reponse.results;
@@ -37,7 +39,7 @@ export class ListeFilmComponent implements OnInit {
 
 getTheFilm(id : any){
   return this.movies.filter(
-    (movie : any) => movie.id === id);
+    (movide : any) => movide.id === id);
 }
 
 
