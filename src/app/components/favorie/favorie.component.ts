@@ -14,4 +14,11 @@ export class FavorieComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getFavMovs(){
+    return this.favMovs;
+  }
+  pushToFavMovs(val : any ){
+    this.favMovs.push(val);
+  }
+
 }
