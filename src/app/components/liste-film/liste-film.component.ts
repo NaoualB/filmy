@@ -8,12 +8,11 @@ import { FavorieComponent } from '../favorie/favorie.component';
 })
 export class ListeFilmComponent implements OnInit {
 
-  @Output() myEvent = new EventEmitter();
   URL = 'https://api.themoviedb.org/3/discover/movie?api_key=';
 
   movies: any = [];
   res : any = {}
-  constructor(private movieService : MovieService, private favo : FavorieComponent) {}
+  constructor(private movieService : MovieService) {}
 
   ngOnInit(): void {
     this.moviesOnGet();
@@ -45,11 +44,7 @@ getTheFilm(id : any){
 
   //Add by ibrahim, not to be deleted
   addToFav(id : any){
-    this.favo.pushToFavMovs(this.getTheFilm(id)[0]);
     console.log("------------ Favo --------- ");
-    
-    console.log(this.favo.favMovs);
-    
   }
 
 }
