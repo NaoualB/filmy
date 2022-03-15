@@ -1,39 +1,32 @@
-
 <section class="headerContainer">
-   
   <div class="logo">
-   <img src="\assets\imgs\logo_small 2.png" />
-   </div>
-   <hr />
+    <img src="\assets\imgs\logo_small 2.png" />
+  </div>
+  <hr />
 
-    <div class="paraph">
-        <h1>LOREM IPSUM DOLOR</h1>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-            Maiores itaque consequuntur, voluptatibus nobis <br>
-            exercitationem<br> 
-            neque odio aliquid reiciendis nesciunt temporibus 
-            cumque <br>
-            cum quas est magnam veniam sit dolor fugit
-             aliquam.</P>
-    </div>
-  
-
-
-
+  <div class="paraph">
+    <h1>LOREM IPSUM DOLOR</h1>
+    <P
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Maiores itaque consequuntur, voluptatibus nobis <br />
+      exercitationem<br />
+      neque odio aliquid reiciendis nesciunt temporibus cumque <br />
+      cum quas est magnam veniam sit dolor fugit aliquam.</P
+    >
+  </div>
 </section>
 
 <section class="sortie">
-    <div class="dernierFilm">
-        <h1>LES DERNIEREs SORTIE:</h1>
-    </div>
+  <div class="dernierFilm">
+    <h1>LES DERNIEREs SORTIE:</h1>
+  </div>
 </section>
 
-
- <ul>
-    <li *ngFor=" let movie of movies">
-    
-        <img src="https://image.tmdb.org/t/p/w200{{movie.backdrop_path}}" alt="">
-    </li>
-
+<ul>
+  <li *ngFor="let movie of movies">
+    <img
+      src="https://image.tmdb.org/t/p/w200{{ movie.backdrop_path }}"
+      alt=""
+    />
+  </li>
 </ul>
-
