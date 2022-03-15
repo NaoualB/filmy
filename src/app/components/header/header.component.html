@@ -20,19 +20,20 @@
   <div class="container">
     <input type="radio" name="dot" id="one" />
     <input type="radio" name="dot" id="two" />
-    <h2>lES DERNIER FILMS:</h2>
+    <h2 class="lastFilm">LES DERNIER FILMS:</h2>
     <br />
     <div class="main-card">
       <div class="cards">
         <div *ngFor="let movie of movies" class="card">
-          <div>
-            <img
-              src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}"
-              alt=""
-            />
-            {{ movie.title }}
+          <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt=""
+          />
+          <h3>{{ movie.title }}</h3>
+          <div class="overview">{{ movie.overview }}</div>
+          <div class="average">
+            <button>Ajouter aux favoirs</button>
+            <p>{{ movie.vote_average }}</p>
           </div>
-        </div>
+          </div>
       </div>
     </div>
     <div class="button">
