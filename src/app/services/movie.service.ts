@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MovieService {
+  snapshot: any;
   constructor(private http: HttpClient) {}
 
   getMovies(){
@@ -14,4 +15,9 @@ export class MovieService {
       'https://api.themoviedb.org/3/discover/movie?api_key=af4430648fc96a64afb77bc0dea546b0'
     );
   }
+  // getMoviesID(){
+  //   return this.http.get<any>(
+  //     `https://api.themoviedb.org/3/discover/movie/${idFromLink}?api_key=af4430648fc96a64afb77bc0dea546b0`
+  //   );
+  // }
 }
