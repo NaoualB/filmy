@@ -1,1 +1,11 @@
-<p>favorie works!</p>
+<div class="listMovie">
+    <div *ngFor="let movie of favMovs" class="movie">
+      <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="" />
+      <h3>{{ movie.title }}</h3>
+      <div class="overview">{{ movie.overview }}</div>
+      <div class="average">
+        <button>Supprimer de favoris</button>
+        <p>{{ movie.vote_average }}</p>
+      </div>
+    </div>
+  </div>

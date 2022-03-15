@@ -1,8 +1,4 @@
 
-.spacer {
-  flex: 1 auto;
-}
-
 .toolbar {
   position: absolute;
   top: 0;
@@ -26,9 +22,12 @@
   margin-right: 4rem;
 }
 
-.toolbar #youtube-logo {
+#nosFilmBtn {
   height: 40px;
-  margin: 0 16px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
 }
 
 .toolbar #twitter-logo:hover,
@@ -65,3 +64,5 @@
     visibility: hidden;
   }
 }
+
+/*The serach */

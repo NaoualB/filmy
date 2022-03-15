@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from 'src/app/services/movie.service';
-
+import { FavorieComponent } from '../favorie/favorie.component';
 @Component({
   selector: 'app-liste-film',
   templateUrl: './liste-film.component.html',
@@ -31,15 +31,18 @@ export class ListeFilmComponent implements OnInit {
   },
     )
   }
-  // moviesOnGetID(): void{
-  //   this.movieService.getMovies().subscribe(
-  //     (reponse)=>{
-  //       this.res = reponse;
-  //       this.movies = this.res.results;
-        
-  //       // this.movies = reponse['results'][1];
-  //       // this.movies = reponse.results;
-  // },
-  //   )
-  // }
+
+
+
+getTheFilm(id : any){
+  return this.movies.filter(
+    (movie : any) => movie.id === id);
+}
+
+
+  //Add by ibrahim, not to be deleted
+  addToFav(id : any){
+    console.log( this.getTheFilm(id));
+    
+  }
 }
