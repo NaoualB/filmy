@@ -4,7 +4,7 @@
     <h3>{{ movie.title }}</h3>
     <div class="overview">{{ movie.overview }}</div>
     <div class="average">
-      <button>Ajouter au panier</button>
+      <button (click)="addToFav(movie.id)">Ajouter aux favoirs</button>
       <p>{{ movie.vote_average }}</p>
     </div>
   </div>
