@@ -1,0 +1,47 @@
+.listMovie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    box-shadow: 10px 5px 5px rgba(116, 116, 116, 0.507);
+    border-radius: 1rem;
+}
+.movie img {
+    width: 100%; 
+    border-top-left-radius: 1rem;   
+    border-top-right-radius: 1rem;   
+}
+.overview {
+    width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.movie h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    width: 15rem;
+}
+
+.average {
+    margin: 1rem;
+    display: flex;
+    
+}
+.average button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 4rem;
+    cursor: pointer;
+}

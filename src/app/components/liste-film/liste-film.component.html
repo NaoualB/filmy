@@ -1,1 +1,11 @@
-<p>liste-film works!</p>
+<div class="listMovie">
+  <div *ngFor="let movie of movies" class="movie">
+    <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="" />
+    <h3>{{ movie.title }}</h3>
+    <div class="overview">{{ movie.overview }}</div>
+    <div class="average">
+      <button>Ajouter au panier</button>
+      <p>{{ movie.vote_average }}</p>
+    </div>
+  </div>
+</div>
