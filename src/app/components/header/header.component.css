@@ -224,4 +224,6 @@ input[type="radio"]{
 }
 .lastFilm {
  margin-left: 5rem;
+ font-family: 'Bebas Neue', cursive;
+ font-size: 2rem;
 }
