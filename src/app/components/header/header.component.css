@@ -40,13 +40,10 @@ h1 {
 .film{
   min-height: 100vh;
   align-items: center;
-  justify-content: space-between;
- 
-  position: relative;
+
 }
 .film::before{
   content: '';
-  position: absolute;
   width: 100%;
   clip-path: inset(47% 0 0 0);
   z-index: -1;
@@ -56,14 +53,15 @@ h1 {
   color: #fff;
 }
 .container{
-  max-width: 950px;
+  max-width: 7500px;
   width: 100%;
   overflow: hidden;
-  padding: 80px 0;
+  padding:150px 0;
 }
 .container .main-card{
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   width: 200%;
   transition: 1s;
 }
