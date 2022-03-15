@@ -77,8 +77,8 @@ h3 {
 
 .GauchePara {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  padding: 100px;
+  padding: 5rem;
+  margin-left: 10rem;
   text-align: justify;
   animation-duration: 3s;
   animation-name: slidein;

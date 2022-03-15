@@ -14,6 +14,9 @@
   padding: 60px;
 
 }
+.logo {
+  margin-top: 10rem;
+}
 
 h1 {
   font-family: "Bebas Neue", cursive;
@@ -68,7 +71,7 @@ h1 {
   margin-left: -100%;
 }
 .container .main-card .cards{
-  width: calc(100% / 2 - 10px);
+  width: calc(120% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
   margin: 0 20px;
