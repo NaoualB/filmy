@@ -1,3 +1,10 @@
+.return {
+    margin-top: 5rem;
+    margin-left: 10rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
 .listMovie {
     display: flex;
     flex-wrap: wrap;
@@ -29,19 +36,22 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     width: 15rem;
+    margin-top: 0.5rem;
 }
 
 .average {
-    margin: 1rem;
+    margin: 0.5rem;
     display: flex;
-    
 }
 .average button {
     background-color: transparent;
     border: none;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.7rem;
     margin-right: 4rem;
     cursor: pointer;
+}
+
+.average p {
+    margin-top: 0.7rem;
 }
